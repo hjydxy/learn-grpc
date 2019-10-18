@@ -17,6 +17,16 @@ type Feature struct {
 	XXX_sizecache        int32    `json:"-"`
 }
 
+type Rectangle struct {
+	// One corner of the rectangle.
+	Lo                   *Point   `protobuf:"bytes,1,opt,name=lo,proto3" json:"lo,omitempty"`
+	// The other corner of the rectangle.
+	Hi                   *Point   `protobuf:"bytes,2,opt,name=hi,proto3" json:"hi,omitempty"`
+	XXX_NoUnkeyedLiteral struct{} `json:"-"`
+	XXX_unrecognized     []byte   `json:"-"`
+	XXX_sizecache        int32    `json:"-"`
+}
+
 
 client.go
 client := pb.NewRouteGuideClient(conn)
