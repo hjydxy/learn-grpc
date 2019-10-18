@@ -1,3 +1,6 @@
+https://github.com/grpc/grpc-go/tree/7c3115d8bba8df106f26e55d52db456ed42893f8/examples/route_guide
+
+
 route_guide.pb.go
 type Point struct {
 	Latitude             int32    `protobuf:"varint,1,opt,name=latitude,proto3" json:"latitude,omitempty"`
